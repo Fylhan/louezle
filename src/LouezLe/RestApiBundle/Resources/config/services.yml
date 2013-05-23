@@ -1,0 +1,7 @@
+parameters:
+#    louez_le_rest_api.example.class: LouezLe\RestApiBundle\Example
+
+services:
+#    louez_le_rest_api.example:
+#        class: %louez_le_rest_api.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

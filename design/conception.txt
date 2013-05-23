@@ -70,8 +70,8 @@ text/url
 tag/url
 participant/url
 
-Sécurité:
-sessionid se balade ? Avec des méthodes login, logout, subscribe, unsubscribe ? Est-ce suffisant ?
+Security:
+sessionid se balade ? Avec des mÃ©thodes login, logout, subscribe, unsubscribe ? Est-ce suffisant ?
 
 API:
 getData(url)

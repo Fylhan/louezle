@@ -1,6 +1,6 @@
 <?php
 
-namespace Olivier\NewsBundle\Tests\Controller;
+namespace LouezLe\RestApiBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

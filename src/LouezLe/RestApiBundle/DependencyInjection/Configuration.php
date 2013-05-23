@@ -1,6 +1,6 @@
 <?php
 
-namespace Olivier\NewsBundle\DependencyInjection;
+namespace LouezLe\RestApiBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('olivier_news');
+        $rootNode = $treeBuilder->root('louez_le_rest_api');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

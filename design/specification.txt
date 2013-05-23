@@ -5,7 +5,7 @@ A platform to manage and display data types useful for a church ceremony.
 * Available offline
 ** Update and download of new data online
 * Easy to install and configure
-* Easy to use for a youth, a "sexagénère" or everyone in the middle
+* Easy to use for a youth, a "sexagï¿½nï¿½re" or everyone in the middle
 ** Even if they are newbies in computer, as soon as a short demo has been done
 * Cross-platform
 * Can be controlled with only a mouse
@@ -44,7 +44,7 @@ Send the list to the worship team
 !Additional functionnalities
 * Manage additional types of data
 ** Songs
-*** Karaoké diaporama
+*** KaraokÃ© diaporama
 *** Complete lyrics
 *** Partition
 *** Accords only partition

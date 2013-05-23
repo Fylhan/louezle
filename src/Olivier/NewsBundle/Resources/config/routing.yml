@@ -1,3 +1,0 @@
-HelloTheWorld:
-    pattern:  /
-    defaults: { _controller: OlivierNewsBundle:News:index }
