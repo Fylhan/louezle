@@ -20,8 +20,8 @@ In "offline" mode: Javascript use the local database provide the functionnalitie
 * url
 * content
 * language
-* dateCreated
-* dateModified
+* dateCreation
+* dateUpdate
 
 !!Text extends GenericData
 * Tag 0..*
