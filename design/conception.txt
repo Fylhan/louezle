@@ -1,0 +1,130 @@
+!Technical Tools
+!!Server side: AMP
+Apache server
+MySQL database on the server side
+PHP with Symfony 2
+
+!!Client side: Web Application
+HTML5 database
+Javascript with jQuery, HTML, CSS
+Tools like Redactor, VexFlow (partition)?
+
+!!Communication
+REST API using JSON between client and server.
+In "online" mode: Ajax call are done in Javascript to retrieve data from the server.
+In "offline" mode: Javascript use the local database provide the functionnalities.
+
+!Entities
+!!GenericData abstract
+* title
+* url
+* content
+* language
+* dateCreated
+* dateModified
+
+!!Text extends GenericData
+* Tag 0..*
+
+!!SongBook extends Text
+* content (description)
+* isbn
+* numberOfPages
+* image 0..* (cover)
+* datePublished
+* Participant 0..*
+* Copyright
+
+
+!!Song extends Text
+* SongBook 0..1
+* numberInSongBook 0..1
+* content (text of the song)
+* datePublished
+* Participant 0..*
+* Copyright
+
+!!Participant
+* firstname
+* surname
+* url  (url to access the participant)
+* role (enum Compositor, Translator, Editor, Illustrator)
+
+!!Tag extends GenericData
+* title (name of the tag)
+* content (description)
+* url (url of the tag)
+
+!!Copyright (don't browse this one)
+* licence
+* holder The party holding the legal copyright to the CreativeWork
+* year The year during which the claimed copyright for the CreativeWork was first asserted
+
+!Bundles
+
+!REST API
+URL d'une data
+text/url
+	song/url
+	songBook/url
+tag/url
+participant/url
+
+Sécurité:
+sessionid se balade ? Avec des méthodes login, logout, subscribe, unsubscribe ? Est-ce suffisant ?
+
+API:
+getData(url)
+GET type/url
+Exemple:
+get tag/
+get tag/love
+get song-book/
+get song-book/jem1
+Response
+{
+href (http://louezle.org/url requested/) ?,
+status,
+message,
+data:[
+	{url, type, data: {...}},
+	]
+}
+
+findData(title, part of content, tags, language)
+GET search/(type/)?
+{title, content, tags: [], language, song book}
+Response
+{
+status,
+message,
+data:[
+	{url, type, data: {...}},
+	]
+}
+
+updateData(data)
+POST (create)/PUT (update) data
+ou GET update/data
+Response
+{
+status,
+message
+}
+
+deleteData(url)
+DELETE url
+ou GET delete/url(s)
+Response
+{
+status,
+message
+}
+
+!Components
+Data Displayer
+Data Editor
+Data Synchronization (online)
+
+!Open Issues
+* The client can retrieve data from the server, fine. But what if the client has generated data? Is it able to send these data to the server? To share them... This means that a kind of "LouezLe Social Database" have to be added.

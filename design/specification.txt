@@ -1,0 +1,64 @@
+!Principle
+A platform to manage and display data types useful for a church ceremony.
+
+!Requirements
+* Available offline
+** Update and download of new data online
+* Easy to install and configure
+* Easy to use for a youth, a "sexagénère" or everyone in the middle
+** Even if they are newbies in computer, as soon as a short demo has been done
+* Cross-platform
+* Can be controlled with only a mouse
+** Main functionnalities are available even with only two buttons
+* Keep it simple and minimalist
+** Other functionnalities can be provided by plugins
+
+!Unapplicable Requirements
+* An official "LouezLe" server will be provided. But other servers can be deployed, and client can decide to use these one instead.
+
+!Use cases
+!!First part of a cult
+During the first part of the cult, the president is leading the assembly to sing worship songs, and he is also reading some text from the Bible. LouezLe is used to display the lyrics on the screen, and shows the text from the Bible.
+
+!!Preparation of the cult
+...
+Send the list to the worship team
+
+!!Preparation of the worship
+
+
+!Main functionnalities
+* Create and manage several types of data
+** Book of songs
+** Songs
+*** Complete lyrics
+** Other contents
+*** Text
+* Create and manage list
+* Search
+** into songs
+** into other contents
+** into lists
+* Manage and change servers
+
+!Additional functionnalities
+* Manage additional types of data
+** Songs
+*** Karaoké diaporama
+*** Complete lyrics
+*** Partition
+*** Accords only partition
+*** Tabalture partition
+** Text from the Bible
+*** In different versions
+*** In different langages
+*** With options: with or without numerotation
+** Other contents
+*** Text with Pictures / Videos / Sounds
+* Display data with different options
+** Background and text color
+** Background image
+* Search
+** into bible verses
+* Print data, list
+* Send a list by email
