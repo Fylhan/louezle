@@ -1,3 +1,7 @@
 LouezLeRestApiBundle_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: LouezLeRestApiBundle:Default:index }
+    
+LouezLeRestApiBundle:
+    resource: "@LouezLeRestApiBundle/Resources/config/routing/genericdata.yml"
+    prefix:   /genericdata

@@ -1,0 +1,30 @@
+genericdata:
+    pattern:  /
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:index" }
+
+genericdata_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:show" }
+
+genericdata_new:
+    pattern:  /new
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:new" }
+
+genericdata_create:
+    pattern:  /create
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:create" }
+    requirements: { _method: post }
+
+genericdata_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:edit" }
+
+genericdata_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:update" }
+    requirements: { _method: post }
+
+genericdata_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "LouezLeRestApiBundle:GenericData:delete" }
+    requirements: { _method: post }
